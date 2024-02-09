@@ -1,7 +1,44 @@
 .App {
-  text-align: center;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.menuContainer {
+  position: absolute;
+  padding: 24px 0 0 16px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.ProfileImage {
+  border-radius: 50%;
+  
+  z-index: -1;
+}
+
+.completeButton {
+  white-space: nowrap;
+  background-image:linear-gradient(to right top, rgb(253, 38, 122), rgb(255, 96, 54));
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  cursor: pointer;
+
+  font-family: ProximaNova, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica, Arial, Segoe UI Emoji, Segoe UI Symbol, Apple Color Emoji, Twemoji Mozilla, Noto Color Emoji, EmojiOne Color, Android Emoji;
+  font-size: 15px;
+  font-weight: 700;
+  color:#fff;
+  padding:8px 12px;
+  border:none;
+  margin-top: -18px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
